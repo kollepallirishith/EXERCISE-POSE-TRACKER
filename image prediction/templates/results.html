@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p><strong>Predicted Exercise Class:</strong> {{ class_name }}</p>
+    <h2>Prediction Scores:</h2>
+    <ul>
+        {% for i in range(predictions|length) %}
+            <li>{{ exercise_classes[i] }}: {{ predictions[i] | round(2) }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Try another image</a>
+</body>
+</html>
