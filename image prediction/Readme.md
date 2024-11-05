@@ -31,9 +31,4 @@ Ensure you have the following installed:
 - Pillow (for image handling)
 - Numpy
 
-## Setup Instructions
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/exercise-classification
-   cd exercise-classification
